@@ -1,0 +1,133 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .pokedex-header {
+    background: linear-gradient(to bottom, #cc0000 45%, #ffffff 50%);
+    color: black; 
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+  
+  .pokedex-title {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .pokemon-grid {
+    padding: 20px 0;
+  }
+  
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .pokemon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .pokemon-image-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #f5f5f5;
+  }
+  
+  .pokemon-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  .pokemon-name {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .pokemon-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .pokemon-details-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .pokemon-details-content {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pokemon-details-name {
+    color: #cc0000;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .pokemon-details-info {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .pokemon-card .MuiCardActions-root {
+    padding: 16px;
+  }
+  
+  .pokemon-card .MuiButton-root,
+  .pokemon-details .MuiButton-root {
+    text-transform: none;
+    font-weight: bold;
+  }
+  
+  .MuiPagination-root {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .pokedex-title {
+      font-size: 2rem;
+    }
+  
+    .pokemon-image {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .pokemon-details-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .pokemon-details-name {
+      font-size: 1.5rem;
+    }
+  
+    .pokemon-details-info {
+      font-size: 1rem;
+    }
+  }
+  
+  
